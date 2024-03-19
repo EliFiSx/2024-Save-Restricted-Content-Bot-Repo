@@ -15,13 +15,13 @@ logging.getLogger("telethon").setLevel(logging.WARNING)
 
 
 # variables
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-SESSION = config("SESSION", default=None)
-FORCESUB = config("FORCESUB", default=None)
-AUTH = config("AUTH", default=None)
-SUDO_USERS = []
+API_ID = "17152322" config("API_ID", default=None, cast=int)
+API_HASH = "79d60e6b081d5ea6c3e7d81b4b6d2f28" config("API_HASH", default=None)
+BOT_TOKEN = "5670586163:AAGpkeRtZyqt84IauR1r4UoOY7sg8ux642I" config("BOT_TOKEN", default=None)
+SESSION = "AQDNvmIAH9aYLKTw4abaqhyOtu1Pg0lIzR2zxiOdAzgsgo830WdVfL9kCKwlbJK7gB0ivvs_7otOIHY7yKwAKOCRDXfU3RLAlQmTyB_g3bmIDAh6-_dRicF1KKCojpXkcMCHEg-DNNoMWqP7q5PIyj6kdW5gA1XYUhXeybJMQpabwxYPJNbjVNMdgWCk1C4fGno1sX0Qcwyw91O7h0D4GISo2YquPzoj0HPmIQ93C_VfA0wu0mxLMbXSYlnq969qSrWiFyZVClIscqydi9kEHBDzbBChheMcNKiyCjJTS0GAKUxRJpPVxNHGSVtnx0Hm_Kccf7CUU2JHteEOBsK13BLjk_FHbQAAAAAjWxWuAA" config("SESSION", default=None)
+FORCESUB = "save_restricted_EliFiS" config("FORCESUB", default=None)
+AUTH = "593171886" config("AUTH", default=None)
+SUDO_USERS = "1095846869" []
 
 if len(AUTH) != 0:
     SUDO_USERS = {int(AUTH.strip()) for AUTH in AUTH.split()}
